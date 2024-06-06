@@ -1,0 +1,18 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket | Portfolio</title>
+    {% tailwind_css %}
+    <link rel="stylesheet" href="{% static 'css/dist/style.css' %}">
+</head>
+<body>
+    {% block body %}
+
+    {% endblock body %}
+    <script type="module" src="{% static 'core/js/core.js' %}"></script>
+</body>
+</html>

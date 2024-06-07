@@ -1,5 +1,5 @@
 {% load static %}
-<header class="bg-blue-950">
+<header class="bg-blue-950 z-10 fixed top-0 w-full transition-all duration-300" id="header">
   <div class="flex justify-between items-center py-6 px-10 text-slate-200">
     <div class="flex gap-3 items-center">
       <div class="logo-container w-14" id="header-logo">
@@ -14,7 +14,10 @@
         <li class="nav-link mr-6"><a href="#" class="link">Resume</a></li>
         <li class="nav-link mr-6"><a href="#" class="link">Blog</a></li>
       </ul>
-      <button class="cta-btn text-nowrap absolute right-4 bottom-4 z-10 md:static md:self-center bg-violet-500 p-2 text-lg text-gray-200 rounded-sm font-bold hover:bg-violet-200 hover:text-slate-800 transition-colors">Contact Me</button>
+      <div class="">
+
+          <button class="cta-btn text-nowrap fixed right-4 bottom-4 z-10 md:static md:self-center bg-violet-500 p-2 text-lg text-gray-200 rounded-sm font-bold hover:bg-violet-200 hover:text-slate-800 transition-colors">Contact Me</button>
+        </div>
       <div class="mobile-menu-icon md:hidden h-9 w-9">
         <a href="#" id="mobile-menu-toggle">
           <svg class="menu-icon-closed" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
@@ -28,7 +31,7 @@
     </nav>
   </div>
 
-  <div class="mobile-menu fixed right-0 w-3/4 h-screen text-blue-100 text-2xl p-8 bg-gray-800 overflow-auto transition-all duration-300 ease-in-out transform translate-x-full" id="mobile-menu">
+  <div class="mobile-menu md:hidden fixed right-0 w-3/4 h-screen text-blue-100 text-2xl p-8 bg-gray-800 overflow-auto transition-all duration-300 ease-in-out transform translate-x-full" id="mobile-menu">
     <nav class="navbar">
       <ul class="nav-links inline-flex flex-col gap-7">
         <li class="nav-link ml-6"><a href="{% url 'core:index' %}" class="link">Home</a></li>
@@ -42,11 +45,24 @@
   <script>
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    let header = document.getElementById('header');
+    let initialHeight = header.offsetHeight;
 
     mobileMenuToggle.addEventListener('click', () => {
       mobileMenu.classList.toggle('translate-x-full');
       mobileMenuToggle.querySelector('.menu-icon-closed').classList.toggle('hidden');
       mobileMenuToggle.querySelector('.menu-icon-open').classList.toggle('hidden');
     });
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+      header.style.transform = 'md:scale(0.9)';
+      header.style.transformOrigin = 'top center';
+      header.classList.add('shadow-md');
+    } else {
+      header.style.transform = 'none';
+      header.style.transformOrigin = 'none';
+      header.classList.remove('shadow-md');
+    }
+  });
   </script>
 </header>

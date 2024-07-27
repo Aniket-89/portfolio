@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body>
+    <header class="lg:pt-20 px-6 max-w-8xl mx-auto bg-transparent sticky top-0 left-0 z-10 pt-8">
+      <nav class="flex justify-between">
+        <div class="">
+
+            <a href="/index.html" class=""><h3 class="logo font-bold">Portfolio</h3></a>
+        </div>
+
+        <ul
+          class="lg:flex gap-20 h-max py-2 items-center font-medium hidden bg-primary-transparent px-4 backdrop-blur-2xl rounded-2xl"
+        >
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+
+        <div class="lg:flex items-center hidden gap-2">
+          <a href="" class="button backdrop-blur-md"> Blogs </a>
+          <a href="" class="button backdrop-blur-md"> Contact </a>
+        </div>
+        <input type="checkbox" name="mobile-menu-show" id="mobile-menu-show">
+        <label for="mobile-menu-show" class="button lg:hidden border-primary-dark mobile-menu-show">Menu</label>
+    </nav>
+</header>
+<div class="hidden space-y-12 mobile-menu absolute top-0 left-0 w-dvw h-dvh bg-primary-pop2 z-20 overflow-hidden py-8 px-6">
+    <div class="flex justify-between">
+        <h3 class="font-bold scale-105">Portfolio</h3>
+        <label for="mobile-menu-show" class="button lg:hidden scale-105 border-primary-dark mobile-menu-show">Close</label>
+    </div>
+
+    <ul class="space-y-12 mobile-nav" style="--count:5;">
+        <li style="--position:1;"><a href="" class="text-5xl font-thin">About Me</a></li>
+        <li style="--position:2;"><a href="" class="text-5xl font-thin">Projects</a></li>
+        <li style="--position:3;"><a href="" class="text-5xl font-thin">Services</a></li>
+        <li style="--position:4;"><a href="" class="text-5xl font-thin">Blogs</a></li>
+        <li style="--position:5;"><a href="" class="text-5xl font-thin">Contact Me</a></li>
+    </ul>
+</div>
+
+    <main class="">
+      <section class="max-w-7xl px-8 lg:px-0 mx-auto">
+        <h1 class="pt-32">
+          Building the future
+          <span
+            class="border-4 rounded-full px-4 py-2 text-primary-pop border-primary-pop"
+            >together</span
+          >
+        </h1>
+        <div class="pt-20 flex flex-col gap-12">
+          <h3>
+            Mirego is a multidisciplinary development, strategy, and design team
+            that powers the digital transformation of its partners.
+          </h3>
+          <a href="" class="button-dark w-max"
+            >Learn more about our expertise</a
+          >
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="rounded-xl overflow-hidden h-[95vh] my-2">
+          <img
+            src="https://images.pexels.com/photos/355863/pexels-photo-355863.jpeg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-3 w-full text-primary-dark">
+          <div
+            class="rounded-xl p-9 flex flex-col justify-between lg:aspect-[5/4] aspect-video lg:w-1/4 bg-primary-accent"
+          >
+            <h1 class="leading-[1]">15+</h1>
+            <p>years experience creating digital products.</p>
+          </div>
+          <div
+            class="rounded-xl p-9 flex flex-col justify-between lg:aspect-[5/4] aspect-video lg:w-1/4 bg-primary-accent"
+          >
+            <h1 class="leading-[1]">15+</h1>
+            <p>years experience creating digital products.</p>
+          </div>
+          <div
+            class="rounded-xl p-9 flex flex-col justify-between lg:aspect-[5/4] aspect-video lg:w-1/4 bg-primary-accent"
+          >
+            <h1 class="leading-[1]">15+</h1>
+            <p>years experience creating digital products.</p>
+          </div>
+          <div
+            class="rounded-xl p-9 flex flex-col justify-between lg:aspect-[5/4] aspect-video lg:w-1/4 bg-primary-accent"
+          >
+            <h1 class="leading-[1]">15+</h1>
+            <p>years experience creating digital products.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h1>Made with <span class="font-pop">passion</span></h1>
+        <div class="grid lg:grid-cols-2 py-16">
+          <div class="hidden lg:inline-block"></div>
+          <p>
+            Through the years, we've built digital products that millions of
+            people use every day on phones, web browsers, tablets, connected
+            watches, TVs, kiosks, and voice assistants.
+          </p>
+        </div>
+        <a href="" class="sticky top-[10%]">
+          <div class="py-12">
+            <div
+              class="lg:h-[80vh] aspect-square lg:aspect-auto p-8 border-2 border-primary-light rounded-xl relative overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                class="absolute top-0 left-0 z-[-1] object-cover h-full w-full"
+              />
+              <div class="flex justify-between">
+                <h4 class="text-primary-light">DuProprio</h4>
+
+                <ul class="flex gap-2 flex-wrap justify-end">
+                    <li class="button-light">Development</li>
+                    <li class="button-light">Product</li>
+                    <li class="button-light">Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="sticky top-[30%]">
+          <div class="py-12">
+            <div
+              class="lg:h-[80vh] aspect-square lg:aspect-auto p-8 border-2 border-primary-light rounded-xl relative overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                class="absolute top-0 left-0 z-[-1] object-cover h-full w-full"
+              />
+              <div class="flex justify-between">
+                <h4 class="text-primary-light">DuProprio</h4>
+
+                <ul class="flex gap-2">
+                  <li class="button-light">Design</li>
+                  <li class="button-light">Development</li>
+                  <li class="button-light">Product</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="" class="sticky top-[50%]">
+          <div class="py-12">
+            <div
+              class="lg:h-[80vh] aspect-square lg:aspect-auto p-8 border-2 border-primary-light rounded-xl relative overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                class="absolute top-0 left-0 z-[-1] object-cover  h-full w-full"
+              />
+              <div class="flex justify-between">
+                <h4 class="text-primary-light">DuProprio</h4>
+
+                <ul class="flex gap-2">
+                  <li class="button-light">Design</li>
+                  <li class="button-light">Development</li>
+                  <li class="button-light">Product</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="" class="sticky top-[70%]">
+          <div class="py-12">
+            <div
+              class="lg:h-[80vh] aspect-square lg:aspect-auto p-8 border-2 border-primary-light rounded-xl bg-primary-dark overflow-hidden"
+            >
+              <div class="flex justify-between">
+                <h4 class="text-primary-light">DuProprio</h4>
+
+                <ul class="flex gap-2">
+                  <li class="button-light">Design</li>
+                  <li class="button-light">Development</li>
+                </ul>
+              </div>
+
+              <ul class="flex justify-between">
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+                <li>item5</li>
+                <li>item6</li>
+                <li>item7</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <section id="blogs" class="container">
+        <h1>Building for the future</h1>
+        <div class="grid lg:grid-cols-2 py-16">
+          <div class="hidden lg:inline-block"></div>
+          <div class="flex flex-col gap-4 py-16">
+            <p>
+              Through the years, we've built digital products that millions of
+              people use every day on phones, web browsers, tablets, connected
+              watches, TVs, kiosks, and voice assistants.
+            </p>
+            <a href="" class="button-dark w-max">Learn More</a>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-4 text-primary-light">
+            <div class="rounded-xl lg:w-1/4 aspect-[4/5] relative flex flex-col overflow-hidden justify-between p-8 items-center">
+                <img src="https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="absolute top-0 left-0 h-full object-cover z-[-1]">
+                <div class="flex justify-between items-center w-full">
+
+                    <div class="flex items-center gap-2">
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Sport</p>
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Report</p>
+                    </div>
+                    <p class=" text-primary-light">Read</p>
+                </div>
+
+                <h4 class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+            </div>
+            <div class="rounded-xl lg:w-1/4 aspect-[4/5] relative flex flex-col overflow-hidden justify-between p-8 items-center">
+                <img src="https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="absolute top-0 left-0 h-full object-cover z-[-1]">
+                <div class="flex justify-between items-center w-full">
+
+                    <div class="flex items-center gap-2">
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Sport</p>
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Report</p>
+                    </div>
+                    <p class=" text-primary-light">Read</p>
+                </div>
+
+                <h4 class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+            </div>
+            <div class="rounded-xl lg:w-1/4 aspect-[4/5] relative flex flex-col overflow-hidden justify-between p-8 items-center">
+                <img src="https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="absolute top-0 left-0 h-full object-cover z-[-1]">
+                <div class="flex justify-between items-center w-full">
+
+                    <div class="flex items-center gap-2">
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Sport</p>
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Report</p>
+                    </div>
+                    <p class=" text-primary-light">Read</p>
+                </div>
+
+                <h4 class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+            </div>
+            <div class="rounded-xl lg:w-1/4 aspect-[4/5] relative flex flex-col overflow-hidden justify-between p-8 items-center">
+                <img src="https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="absolute top-0 left-0 h-full object-cover z-[-1]">
+                <div class="flex justify-between items-center w-full">
+
+                    <div class="flex items-center gap-2">
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Sport</p>
+                        <p class="button-outline rounded-full px-4 py-2 text-sm leading-[1]">Report</p>
+                    </div>
+                    <p class=" text-primary-light">Read</p>
+                </div>
+
+                <h4 class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary-dark rounded-tl-3xl rounded-tr-3xl w-full text-primary-accent">
+        <div class="container py-16">
+
+            <div class="grid lg:grid-cols-3 grid- gap-16">
+                <div class="flex flex-col gap-4">
+                    <h4>Let's work together</h4>
+                    <a href="" class="hover:text-primary-Selection group">Delhi <span class="text-primary-dark group-hover:text-primary-Selection">-Ghaziabad</span></a>
+                    <a href="" class="hover:text-primary-Selection group">Delhi <span class="text-primary-dark group-hover:text-primary-Selection">-Ghaziabad</span></a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4>Let's work together</h4>
+                    <a href="" class="hover:text-primary-Selection">Delhi <span class="text-primary-dark ">-Ghaziabad</span></a>
+                    <a href="" class="hover:text-primary-Selection">Delhi <span class="text-primary-dark ">-Ghaziabad</span></a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3>Reach out</h4>
+                    <a href="" class="hover:text-primary-Selection">Delhi <span class="text-primary-dark ">-Ghaziabad</span></a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a href="" class="hover:text-primary-Selection">+91 950 720 7645</span></a>
+                    <a href="" class="hover:text-primary-Selection underline">aniketkumarg99@gmail.com</span></a>
+                </div>
+                <div class="flex flex-wrap h-max gap-2">
+                    <a href="" class="hover:text-primary-Selection text-primary-accent border border-primary-accent rounded-2xl px-4 py-2">LinkedIn</a>
+                    <a href="" class="hover:text-primary-Selection text-primary-accent border border-primary-accent rounded-2xl px-4 py-2">GitHub</a>
+                    <a href="" class="hover:text-primary-Selection text-primary-accent border border-primary-accent rounded-2xl px-4 py-2">Instagram</a>
+                    <a href="" class="hover:text-primary-Selection text-primary-accent border border-primary-accent rounded-2xl px-4 py-2">Hashnode</a>
+                    <a href="" class="hover:text-primary-Selection text-primary-accent border border-primary-accent rounded-2xl px-4 py-2">YouTube</span></a>
+                </div>
+                
+            </div>
+
+        </div>
+    </footer>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const logo = document.querySelector('.logo');
+          const threshold = 50; // Adjust this value to control when the logo should shrink
+    
+          window.addEventListener('scroll', function () {
+            if (window.scrollY > threshold) {
+              logo.classList.add('shrunk');
+            } else {
+              logo.classList.remove('shrunk');
+            }
+          });
+          
+            mobileMenuShow = document.getElementById('mobile-menu-show');
+            mobileMenu = document.querySelector('.mobile-menu');
+
+            mobileMenuShow.addEventListener('change', function () {
+                if (mobileMenuShow.checked) {
+                    mobileMenu.classList.remove('hidden');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+      </script>
+  </body>
+
+</html>

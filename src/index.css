@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lugrasimo&family=Space+Grotesk:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    @apply bg-primary-Selection;
+}
+
+input[type='checkbox'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+
+h1 {
+    @apply lg:text-7xl;
+    @apply text-5xl;
+    line-height: 1.6
+}
+
+h2 {
+    @apply text-5xl;
+}
+
+h3 {
+    @apply lg:text-5xl;
+    @apply text-3xl;
+    line-height: 1.2;
+}
+
+h4 {
+    @apply text-2xl;
+}
+
+h5 {
+    @apply text-xl;
+}
+
+h6 {
+    @apply text-lg;
+}
+
+p {
+    @apply lg:text-xl;
+    @apply text-base;
+}
+
+a {
+    @apply lg:text-base;
+    @apply text-xl;
+    line-height: 1;
+}
+
+body {
+    @apply font-space;
+    @apply bg-primary-light;
+    min-height: 100vh;
+    line-height: 1.4;
+
+}
+
+section {
+    @apply mb-32;
+}
+
+
+.container {
+    @apply mx-auto;
+    @apply lg:max-w-8xl;
+    @apply w-full;
+    @apply p-4;
+}
+
+.button {
+    @apply bg-primary-transparent;
+    @apply text-primary-dark;
+    @apply font-space;
+    @apply font-bold;
+    @apply rounded-full;
+    @apply border;
+    @apply px-4;
+    @apply py-2;
+}
+
+.button-light {
+    @apply bg-primary-light;
+    @apply text-primary-dark;
+    padding: 0.5rem 1rem;
+    @apply rounded-full;
+    display: flex;
+    align-items: center;
+}
+
+.button-dark {
+    @apply bg-primary-dark;
+    @apply text-primary-light;
+    padding: 0.5rem 1rem;
+    @apply rounded-xl;
+    display: flex;
+    align-items: center;
+}
+
+.button-outline {
+    @apply bg-transparent;
+    @apply rounded-3xl;
+    @apply border;
+    @apply text-primary-light
+}
+
+.logo {
+    width: max-content;
+    overflow: hidden;
+    animation: enlargeAnimation 0.3s linear forwards;
+    
+}
+
+@keyframes shrunkAnimation {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 13.5%;
+    }
+}
+
+@keyframes enlargeAnimation {
+    0% {
+        width: 13.5%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.shrunk {
+    white-space: nowrap;
+    animation: shrunkAnimation 0.3s linear forwards;
+}
+
+#mobile-menu-show:checked ~ .mobile-menu {
+    display: block;
+}
+
+
+@keyframes SlidingAnimation {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+
+    }
+}
+
+.mobile-nav li {
+    transform: translateX(-100%);
+    animation: SlidingAnimation 0.4s linear  forwards;
+    animation-delay: calc((var(--position) * 0.05s));
+}

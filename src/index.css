@@ -126,13 +126,13 @@ section {
         width: 100%;
     }
     100% {
-        width: 13.5%;
+        width: 20%;
     }
 }
 
 @keyframes enlargeAnimation {
     0% {
-        width: 13.5%;
+        width: 20%;
     }
     100% {
         width: 100%;
